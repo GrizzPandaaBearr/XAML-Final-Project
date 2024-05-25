@@ -16,13 +16,14 @@ using System.Windows.Shapes;
 namespace XAML_Final_Project.Component
 {
     /// <summary>
-    /// Interaction logic for LogIn_Screen.xaml
+    /// Interaction logic for MainMenu.xaml
     /// </summary>
-    public partial class LogIn_Screen : UserControl
+    public partial class MainMenu : UserControl
     {
-        public LogIn_Screen()
+        public MainMenu()
         {
             InitializeComponent();
         }
+
     }
 }
