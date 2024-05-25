@@ -24,5 +24,7 @@ namespace XAML_Final_Project.Component
         {
             InitializeComponent();
         }
+
+        
     }
 }
