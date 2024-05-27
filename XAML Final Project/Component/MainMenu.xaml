@@ -29,7 +29,7 @@
                     </MenuItem.Header>
                     
                     <MenuItem.Icon  >
-                        <Image Source="/Assets/Home.png" />
+                        <Image Source="/Assets/Home.png" Margin="0,0,-17,-22"/>
                     </MenuItem.Icon>
                     
                 </MenuItem>
