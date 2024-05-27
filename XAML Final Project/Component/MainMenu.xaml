@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:XAML_Final_Project.Component"
              mc:Ignorable="d" 
-             d:DesignHeight="700" d:DesignWidth="900"
+             d:DesignHeight="450" d:DesignWidth="800"
              FontFamily="Cambria">
 
     <Grid Background="White">
@@ -14,7 +14,7 @@
                 <TextBlock Text="YOOBEE Library" Foreground="White" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Cambria" FontWeight="Bold"/>
             </Grid>
 
-            <Menu Height="450" Background="Transparent" Margin="0,40,0,0">
+            <Menu Height="330" Background="Transparent" Margin="0,40,0,0">
 
                 <Menu.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -22,16 +22,48 @@
                     </ItemsPanelTemplate>
                 </Menu.ItemsPanel>
 
-                <MenuItem  FontSize="36" Margin="0,0,0,0" HorizontalAlignment="Right">
+                <MenuItem FontSize="30" Margin="0,0,0,0" HorizontalAlignment="Left">
                     <MenuItem.Header >
-                        <TextBlock Padding="20 0 0 0">Blah</TextBlock>
-                       
+                        <TextBlock Padding="15 0 0 0" Width="100">Home</TextBlock>
                     </MenuItem.Header>
-                    
+
                     <MenuItem.Icon  >
-                        <Image Source="/Assets/Home.png" Margin="0,0,-17,-22"/>
+                        <Image Source="/Assets/Home.png" Margin="0,-13,-17,-13"/>
                     </MenuItem.Icon>
-                    
+                    <MenuItem Header="LogIn" Background="SkyBlue">
+                        <MenuItem Header="Members" Background="SkyBlue"/>
+                        <MenuItem Header="Admin" Background="SkyBlue"/>
+                    </MenuItem>
+                    <MenuItem Header="SignUp" Background="SkyBlue"/>
+                </MenuItem>
+
+                <MenuItem FontSize="30" Margin="0,0,0,0" HorizontalAlignment="Left">
+                    <MenuItem.Header >
+                        <TextBlock Padding="15 0 0 0" Width="100">Books</TextBlock>
+                    </MenuItem.Header>
+
+                    <MenuItem.Icon>
+                        <Image Source="/Assets/Books.png" Margin="0,-13,-17,-13"/>
+                    </MenuItem.Icon>
+
+                    <MenuItem Header="Availability" Background="SkyBlue"/>
+                    <MenuItem Header="Prebook" Background="SkyBlue"/>
+                </MenuItem>
+
+                <MenuItem FontSize="30" Margin="0,0,0,0" HorizontalAlignment="Left">
+                    <MenuItem.Header >
+                        <TextBlock Padding="15 0 0 0" Width="100">Admin</TextBlock>
+
+                    </MenuItem.Header>
+
+                    <MenuItem.Icon  >
+                        <Image Source="/Assets/People.png" Margin="0,-13,-17,-13"/>
+                    </MenuItem.Icon>
+                    <MenuItem Header="Book Information" Background="SkyBlue">
+                    </MenuItem>
+                    <MenuItem Header="Members Information" Background="SkyBlue"/>
+                    <MenuItem Header="Add Modify Books" Background="SkyBlue"/>
+                    <MenuItem Header="Add Modify Members" Background="SkyBlue"/>
                 </MenuItem>
 
             </Menu>
