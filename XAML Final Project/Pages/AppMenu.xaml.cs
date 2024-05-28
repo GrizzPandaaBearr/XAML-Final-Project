@@ -13,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace XAML_Final_Project.Component
+namespace XAML_Final_Project
 {
     /// <summary>
-    /// Interaction logic for MainMenu.xaml
+    /// Interaction logic for AppMenu.xaml
     /// </summary>
-    public partial class MainMenu : UserControl
+    public partial class AppMenu : Page
     {
-        public MainMenu()
+        public AppMenu()
         {
             InitializeComponent();
         }
-
     }
 }
