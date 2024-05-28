@@ -8,50 +8,6 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AppMenu">
-    
-    <ResourceDictionary>
-        <Style x:Key="MainMenu_Item"
-               TargetType="MenuItem">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type MenuItem}>
-                       <Border x:Name="border"
-                                Background="SkyBlue"
-                                BorderThickness="0">
-                            <Grid>
-                                <ContentPresenter ContentSource="Icon"
-                                                  HorizontalAlignment="Left"
-                                                  VerticalAlignment="Center"
-                                                  Height="22"
-                                                  Width="22"
-                                                  Margin="8,0,0,0"/>
-
-                        <ContentPresenter ContentSource="Header"
-                                                  TextBlock.Foreground="White"
-                                                  TextBlock.FontFamily="Cambria"
-                                                  TextBlock.FontSize="15"
-                                                  HorizontalAlignment="Left"
-                                                  VerticalAlignment="Center"
-                                                  Margin="40,0,0,0"/>
-                        </Grid>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsHighlighted"
-                                     Value="True">
-                                <Setter Property="Background"
-                                        TargetName="border"
-                                        Value="#524e4f"/>
-                                <Setter Property="BorderBrush"
-                                        TargetName="border"
-                                        Value="#524e4f"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </ResourceDictionary>
-
 
     <Grid>
         <Border Height="40"

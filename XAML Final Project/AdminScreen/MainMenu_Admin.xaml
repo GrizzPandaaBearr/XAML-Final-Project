@@ -8,57 +8,131 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainMenu_Admin">
 
-    <Grid Background="White">
-        <StackPanel Background="SkyBlue" Width="250" Orientation="Vertical" HorizontalAlignment="Left">
-            <Grid Height="50" VerticalAlignment="Top" Margin="0,30,0,0">
-                <TextBlock Text="YOOBEE Library" Foreground="White" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Cambria" FontWeight="Bold"/>
-            </Grid>
+    <Grid>
+        <Border Height="40"
+                Width="640"
+                Background="SkyBlue"
+                BorderBrush="SkyBlue"
+                BorderThickness="3"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                Margin="0,75,0,0"
+                CornerRadius="5"/>
 
-            <Menu Height="330" Background="Transparent" Margin="0,40,0,0">
+        <Menu Height="30"
+              Width="630"
+              Background="SkyBlue"
+              VerticalAlignment="Top"
+              HorizontalAlignment="Center"
+              Margin="0,80,0,0">
+            <MenuItem Header="Home"
+                      Height="30"
+                      Width="90"
+                      HorizontalAlignment="Center" 
+                      FontSize="18" 
+                      FontFamily="Cambria">
+                <MenuItem.Icon>
+                    <Image Source="/Assets/Home.png" />
+                </MenuItem.Icon>
 
-                <Menu.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <VirtualizingStackPanel Orientation="Vertical"/>
-                    </ItemsPanelTemplate>
-                </Menu.ItemsPanel>
+                <MenuItem Header="Sign Up" 
+                          Background="SkyBlue"
+                          FontSize="18"
+                          FontFamily="Cambria">
+                    <MenuItem.Icon>
+                        <Image Source="/Assets/People.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
 
-                <MenuItem FontSize="30" Margin="0,0,0,0" HorizontalAlignment="Left">
-                    <MenuItem.Header >
-                        <TextBlock Padding="15 0 0 0" Width="100">Admin</TextBlock>
-
-                    </MenuItem.Header>
-
-                    <MenuItem.Icon >
-                        <Image Source="/Assets/People.png" Margin="0,-13,-17,-13"/>
+                <MenuItem Header="Log In" 
+                          Background="SkyBlue"
+                          FontSize="18"
+                          FontFamily="Cambria">
+                    <MenuItem.Icon>
+                        <Image Source="/Assets/People.png"/>
                     </MenuItem.Icon>
 
-                    <MenuItem Header="Book Information" Background="SkyBlue">
+                    <MenuItem Header="Member" 
+                              Background="SkyBlue"
+                              FontSize="18"
+                              FontFamily="Cambria">
                         <MenuItem.Icon>
-                            <Image Source="/Assets/Books.png" Margin="0,-13,-17,-13"/>
+                            <Image Source="/Assets/People.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
 
-                    <MenuItem Header="Members Information" Background="SkyBlue">
+                    <MenuItem Header="Admin" 
+                              Background="SkyBlue"
+                              FontSize="18"
+                              FontFamily="Cambria">
                         <MenuItem.Icon>
-                            <Image Source="/Assets/Peoples.png" Margin="0,-13,-17,-13"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
-
-                    <MenuItem Header="Add Modify Books" Background="SkyBlue">
-                        <MenuItem.Icon>
-                            <Image Source="/Assets/Books.png" Margin="0,-13,-17,-13"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
-
-                    <MenuItem Header="Add Modify Members" Background="SkyBlue">
-                        <MenuItem.Icon>
-                            <Image Source="/Assets/Peoples.png" Margin="0,-13,-17,-13"/>
+                            <Image Source="/Assets/Peoples.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
-            </Menu>
-        </StackPanel>
+            </MenuItem>
 
+            <MenuItem Header="Books"
+                      Height="30"
+                      Width="90"
+                      HorizontalAlignment="Center" 
+                      FontSize="18" 
+                      FontFamily="Cambria">
+                <MenuItem.Icon>
+                    <Image Source="/Assets/Books.png" />
+                </MenuItem.Icon>
+
+                <MenuItem>
+                    <MenuItem Header="Modify Book's Information" 
+                              Background="SkyBlue"
+                              FontSize="18"
+                              FontFamily="Cambria">
+                        <MenuItem.Icon>
+                            <Image Source="/Assets/ModifyBooks.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Header="Add Books" 
+                              Background="SkyBlue" 
+                              FontSize="18"
+                              FontFamily="Cambria">
+                        <MenuItem.Icon>
+                            <Image Source="/Assets/AddBooks.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+            </MenuItem>
+
+            <MenuItem Header="Members"
+                      Height="30"
+                      Width="107"
+                      HorizontalAlignment="Center" 
+                      FontSize="18" 
+                      FontFamily="Cambria">
+                <MenuItem.Icon>
+                    <Image Source="/Assets/Peoples.png" />
+                </MenuItem.Icon>
+
+                <MenuItem>
+                    <MenuItem Header="Modify Members's Information" 
+                              Background="SkyBlue" 
+                              FontSize="18"
+                              FontFamily="Cambria">
+                        <MenuItem.Icon>
+                            <Image Source="/Assets/ModifyMembers.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Header="Add Members" 
+                              Background="SkyBlue"
+                              FontSize="18"
+                              FontFamily="Cambria">
+                        <MenuItem.Icon>
+                            <Image Source="/Assets/AddMembers.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
     </Grid>
- 
 </Page>
