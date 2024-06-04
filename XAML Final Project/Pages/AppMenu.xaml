@@ -81,24 +81,6 @@
                 <MenuItem.Icon>
                     <Image Source="/Assets/Books.png" />
                 </MenuItem.Icon>
-                <MenuItem>
-                    <MenuItem Header="Availability" 
-                              Background="SkyBlue"
-                              FontSize="18"
-                              FontFamily="Cambria">
-                        <MenuItem.Icon>
-                            <Image Source="/Assets/Availability.png"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
-                    <MenuItem Header="Prebook" 
-                              Background="SkyBlue"
-                              FontSize="18"
-                              FontFamily="Cambria">
-                        <MenuItem.Icon>
-                            <Image Source="/Assets/Pre-Order.png"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
-                </MenuItem>
             </MenuItem>
         </Menu>
     </Grid>
