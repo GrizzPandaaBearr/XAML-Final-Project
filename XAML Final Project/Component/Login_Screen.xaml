@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              Background="White">
-    
+
     <Grid HorizontalAlignment="Center" RenderTransformOrigin="0,0">
         <Rectangle HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="300" Fill="SkyBlue"/>
         <Rectangle HorizontalAlignment="Left" Height="450" Margin="300,0,0,0" VerticalAlignment="Center" Width="500"/>
@@ -20,7 +20,7 @@
         <Grid x:Name="SignIn" HorizontalAlignment="Left" Margin="325,32,0,32" Width="465">
             <Button Content="Sign Up" BorderBrush="SkyBlue" Background="SkyBlue" Foreground="Black" Width="104" HorizontalAlignment="Left" Margin="361,0,0,354" FontSize="20" FontFamily="Cambria"/>
 
-            <TextBlock HorizontalAlignment="Left" Margin="113,2,0,0" TextWrapping="Wrap" Text="New to Library Member?" VerticalAlignment="Top" Width="248" FontSize="22" FontFamily="Cambria" Background="{x:Null}" TextAlignment="Center" Height="27"/>
+            <TextBlock HorizontalAlignment="Left" Margin="96,2,0,0" TextWrapping="Wrap" Text="New to Library Member?" VerticalAlignment="Top" Width="265" FontSize="22" FontFamily="Cambria" Background="{x:Null}" TextAlignment="Center" Height="27"/>
             <TextBlock TextWrapping="Wrap" Text="Sign In to YOOBEE Library" Margin="134,43,0,0" FontSize="24" HorizontalAlignment="Left" TextAlignment="Center" FontFamily="Cambria" VerticalAlignment="Top" Width="182"/>
 
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" FontFamily="Cambria" FontSize="16" Margin="0,111,0,0" Width="83"/>
