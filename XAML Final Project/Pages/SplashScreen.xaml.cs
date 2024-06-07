@@ -16,15 +16,13 @@ using System.Windows.Shapes;
 namespace XAML_Final_Project.Pages
 {
     /// <summary>
-    /// Interaction logic for BOOKS.xaml
+    /// Interaction logic for SplashScreen.xaml
     /// </summary>
-    public partial class BOOKS : Page
+    public partial class SplashScreen : Page
     {
-        public BOOKS()
+        public SplashScreen()
         {
             InitializeComponent();
         }
     }
-
-    class Books
 }
