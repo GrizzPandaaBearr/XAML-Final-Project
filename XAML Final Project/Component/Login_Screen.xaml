@@ -12,7 +12,7 @@
         <Rectangle HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="300" Fill="SkyBlue"/>
         <Rectangle HorizontalAlignment="Left" Height="450" Margin="300,0,0,0" VerticalAlignment="Center" Width="500"/>
         <Polygon Points="0,20 230,140 0,270" Fill="#90E0EF"/>
-        <Polygon Points="100,400 200,370 180,470" Fill="#90E0EF" HorizontalAlignment="Left" Canvas.Top="-54" VerticalAlignment="Top" Height="504" Margin="0,-54,0,0"/>
+        <Polygon Points="100,400 200,370 180,470" Fill="#90E0EF" HorizontalAlignment="Left" Canvas.Top="-54" VerticalAlignment="Top" Height="504" Margin="-9,-80,0,0"/>
         <Ellipse Height="40" Width="40" Fill="#90E0EF" Canvas.Left="229" Canvas.Top="400" Margin="205,400,555,10"/>
         <Ellipse Height="20" Width="20" Fill="#90E0EF" Canvas.Left="36" Canvas.Top="343" Margin="38,355,742,75"/>
 

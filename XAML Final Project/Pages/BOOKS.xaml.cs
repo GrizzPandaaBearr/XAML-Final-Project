@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MongoDB.Bson;
+using MongoDB.Driver;
 
 namespace XAML_Final_Project.Pages
 {
