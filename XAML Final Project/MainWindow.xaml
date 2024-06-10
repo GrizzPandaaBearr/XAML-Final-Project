@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:XAML_Final_Project"
         xmlns:Component="clr-namespace:XAML_Final_Project.Component" x:Class="XAML_Final_Project.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="#FFB14D4D">
     <Grid>
      
     </Grid>
