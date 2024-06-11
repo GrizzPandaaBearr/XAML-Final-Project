@@ -11,8 +11,8 @@
     <Grid>
         <Border Height="40"
                 Width="640"
-                Background="SkyBlue"
-                BorderBrush="SkyBlue"
+                Background="#FF9FCBFF"
+                BorderBrush="#FF9FCBFF"
                 BorderThickness="3"
                 VerticalAlignment="Top"
                 HorizontalAlignment="Center"
@@ -36,7 +36,7 @@
                 </MenuItem.Icon>
 
                 <MenuItem Header="Sign Up" 
-                          Background="SkyBlue"
+                          Background="#FF9FCBFF"
                           FontSize="18"
                           FontFamily="Cambria">
                     <MenuItem.Icon>
@@ -45,7 +45,7 @@
                 </MenuItem>
 
                 <MenuItem Header="Log In" 
-                          Background="SkyBlue"
+                          Background="#FF9FCBFF"
                           FontSize="18"
                           FontFamily="Cambria">
                     <MenuItem.Icon>
@@ -53,7 +53,7 @@
                     </MenuItem.Icon>
 
                     <MenuItem Header="Member" 
-                              Background="SkyBlue"
+                              Background="#FF9FCBFF"
                               FontSize="18"
                               FontFamily="Cambria">
                         <MenuItem.Icon>
@@ -62,7 +62,7 @@
                     </MenuItem>
 
                     <MenuItem Header="Admin" 
-                              Background="SkyBlue"
+                              Background="#FF9FCBFF"
                               FontSize="18"
                               FontFamily="Cambria">
                         <MenuItem.Icon>
@@ -84,7 +84,7 @@
 
                 <MenuItem>
                     <MenuItem Header="Modify Book's Information" 
-                              Background="SkyBlue"
+                              Background="#FF9FCBFF"
                               FontSize="18"
                               FontFamily="Cambria">
                         <MenuItem.Icon>
@@ -93,7 +93,7 @@
                     </MenuItem>
 
                     <MenuItem Header="Add Books" 
-                              Background="SkyBlue" 
+                              Background="#FF9FCBFF" 
                               FontSize="18"
                               FontFamily="Cambria">
                         <MenuItem.Icon>
@@ -115,7 +115,7 @@
 
                 <MenuItem>
                     <MenuItem Header="Modify Members's Information" 
-                              Background="SkyBlue" 
+                              Background="#FF9FCBFF" 
                               FontSize="18"
                               FontFamily="Cambria">
                         <MenuItem.Icon>
@@ -124,7 +124,7 @@
                     </MenuItem>
 
                     <MenuItem Header="Add Members" 
-                              Background="SkyBlue"
+                              Background="#FF9FCBFF"
                               FontSize="18"
                               FontFamily="Cambria">
                         <MenuItem.Icon>

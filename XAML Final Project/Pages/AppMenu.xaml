@@ -11,8 +11,8 @@
     <Grid>
         <Border Height="40"
                 Width="640"
-                Background="SkyBlue"
-                BorderBrush="SkyBlue"
+                Background="#FF9FCBFF"
+                BorderBrush="#FF9FCBFF"
                 BorderThickness="3"
                 VerticalAlignment="Top"
                 HorizontalAlignment="Center"
@@ -21,7 +21,7 @@
         
         <Menu Height="30"
               Width="630"
-              Background="SkyBlue"
+              Background="#FF9FCBFF"
               VerticalAlignment="Top"
               HorizontalAlignment="Center"
               Margin="0,80,0,0">
@@ -36,7 +36,7 @@
                 </MenuItem.Icon>
 
                 <MenuItem Header="Sign Up" 
-                          Background="SkyBlue"
+                          Background="#FF9FCBFF"
                           FontSize="18"
                           FontFamily="Cambria">
                     <MenuItem.Icon>
@@ -45,7 +45,7 @@
                 </MenuItem>
 
                 <MenuItem Header="Log In" 
-                          Background="SkyBlue"
+                          Background="#FF9FCBFF"
                           FontSize="18"
                           FontFamily="Cambria">
                     <MenuItem.Icon>
@@ -53,7 +53,7 @@
                     </MenuItem.Icon>
 
                     <MenuItem Header="Member" 
-                              Background="SkyBlue"
+                              Background="#FF9FCBFF"
                               FontSize="18"
                               FontFamily="Cambria">
                         <MenuItem.Icon>
@@ -62,7 +62,7 @@
                     </MenuItem>
 
                     <MenuItem Header="Admin" 
-                              Background="SkyBlue"
+                              Background="#FF9FCBFF"
                               FontSize="18"
                               FontFamily="Cambria">
                         <MenuItem.Icon>

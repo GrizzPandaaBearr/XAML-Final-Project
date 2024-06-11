@@ -5,26 +5,30 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:XAML_Final_Project.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="1000"
       Title="MenuScreen"
       Background="White">
 
     <Grid>
-        <Rectangle Fill="#FF9FCBFF" Margin="0,400,0,0"/>
-        <TextBlock TextWrapping="Wrap" Text="Connect With Us" Margin="171,412,0,0" FontFamily="Cambria" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Image Source="/Assets/Twitter.png" Margin="443,408,322,7" />
-        <Image Source="/Assets/Youtube.png" Margin="373,400,365,0" />
-        <Image Source="/Assets/Instagram.png" Margin="491,408,273,7" />
-        <Image Source="/Assets/LinkedIn.png" Margin="588,407,177,7" />
-        <Image Source="/Assets/Facebook.png" Margin="540,405,223,7" />
-        <Image Source="/Assets/bookss1.jpg" Margin="400,-2,0,250" Stretch="Fill" Opacity="0.3" />
-        <Image Source="/Assets/bookss2.jpg" Margin="0,200,400,50" Stretch="Fill" Opacity="0.3" />
-        <Image Source="/Assets/bookss3.jpg" Stretch="Fill" Margin="400,200,0,50" Opacity="0.3" />
-        <Image Source="/Assets/bookss.jpg" Margin="0,0,400,250" Stretch="Fill" Opacity="0.3" />
-        <TextBlock TextWrapping="Wrap" Text="About Us" Margin="83,87,0,323" FontFamily="Cambria" FontSize="36" HorizontalAlignment="Left" FontWeight="Bold"/>
-        <TextBlock TextWrapping="Wrap" Text="Welcome to our library! Our mission is to provide a welcoming and inclusive environment for everyone in the community to explore, learn, and grow. Our team of dedicated staff is passionate about connecting people with the information and resources they need to succeed. With a vast collection of books, media, and digital materials, we strive to stay ahead of the curve in meeting the evolving needs of our patrons. Whether you're a student, researcher, or simply looking for a good read, we're here to support you every step of the way." Margin="20,133,492,0" FontFamily="Cambria" VerticalAlignment="Top" TextAlignment="Justify" FontSize="16" Height="268"/>
-        <TextBlock TextWrapping="Wrap" Text="Books Collection" Margin="498,85,0,325" FontFamily="Cambria" FontSize="36" HorizontalAlignment="Left" FontWeight="Bold" Width="278"/>
-        <TextBlock TextWrapping="Wrap" Text="We have lots of books collection that you may either read on the spot or you can borrow it from us and read it at home." Margin="490,129,22,0" FontFamily="Cambria" VerticalAlignment="Top" TextAlignment="Justify" FontSize="16" Height="60"/>
+        <Rectangle Fill="#FF9FCBFF" Margin="0,550,0,0"/>
+        <TextBlock TextWrapping="Wrap" Text="Contact  Us" Margin="330,563,0,0" FontFamily="Cambria" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Image Source="/Assets/Twitter.png" Margin="546,562,421,9" />
+        <Image Source="/Assets/Youtube.png" Margin="502,558,464,6" />
+        <Image Source="/Assets/Instagram.png" Margin="448,560,502,8" />
+        <Image Source="/Assets/LinkedIn.png" Margin="584,560,386,8" />
+        <Image Source="/Assets/Facebook.png" Margin="620,559,344,7" />
+        <Image Source="/Assets/bookss1.jpg" Margin="500,0,0,325" Stretch="Fill" Opacity="0.3" />
+        <Image Source="/Assets/bookss2.jpg" Margin="0,275,500,50" Stretch="Fill" Opacity="0.3" />
+        <Image Source="/Assets/bookss3.jpg" Stretch="Fill" Margin="500,275,0, 50" Opacity="0.3" />
+        <Image Source="/Assets/bookss.jpg" Margin="0,0,500,325" Stretch="Fill" Opacity="0.3" />
+        <TextBlock TextWrapping="Wrap" Text="About Us" Margin="105,170,0,0" FontFamily="Cambria" FontSize="24" HorizontalAlignment="Left" FontWeight="Bold" VerticalAlignment="Top"/>
+        <TextBlock TextWrapping="Wrap" Text="Welcome to our library! Our mission is to provide a welcoming and inclusive environment for everyone in the community to explore, learn, and grow. Our team of dedicated staff is passionate about connecting people with the information and resources they need to succeed. With a vast collection of books, media, and digital materials, we strive to stay ahead of the curve in meeting the evolving needs of our patrons. Whether you're a student, researcher, or simply looking for a good read, we're here to support you every step of the way." Margin="20,204,694,0" FontFamily="Cambria" VerticalAlignment="Top" TextAlignment="Justify" FontSize="18" Height="344"/>
+        <TextBlock TextWrapping="Wrap" Text="Books Collection" Margin="398,170,0,0" FontFamily="Cambria" FontSize="24" HorizontalAlignment="Left" FontWeight="Bold" Width="184" VerticalAlignment="Top"/>
+        <TextBlock TextWrapping="Wrap" FontFamily="Cambria" VerticalAlignment="Top" TextAlignment="Justify" FontSize="18" Height="170" HorizontalAlignment="Center" Width="312" Margin="0,204,0,0"><Run Text="Items borrowed from the library must be returned by the due date specified at checkout. Late returns may incur fines, which vary depending on the type of material and the duration of the delay. Patrons are responsible for any lost or damaged items and will be charged accordingly for their replacement."/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        
+        <TextBlock TextWrapping="Wrap" Text="Return Policy" Margin="758,170,0,0" FontFamily="Cambria" FontSize="24" HorizontalAlignment="Left" FontWeight="Bold" Width="152" VerticalAlignment="Top"/>
+        <TextBlock TextWrapping="Wrap" Text="Items borrowed from the library must be returned by the due date specified at checkout. Late returns may incur fines, which vary depending on the type of material and the duration of the delay. Patrons are responsible for any lost or damaged items and will be charged accordingly for their replacement." Margin="696,204,34,0" FontFamily="Cambria" VerticalAlignment="Top" TextAlignment="Justify" FontSize="18" Height="220"/>
+
 
 
 
