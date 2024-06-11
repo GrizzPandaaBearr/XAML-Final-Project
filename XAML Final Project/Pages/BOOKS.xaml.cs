@@ -28,18 +28,18 @@ namespace XAML_Final_Project.Pages
         }
     }
 
-    class Books
-    {
-        public Books()
-        {
+    //class Books
+    //{
+    //    public Books()
+    //    {
 
-        }
-        public List<Books> ReadingBooks { get; set; }
-        public string Name { get; set; }
-        public string Author { get; set; }
-        public int ISBN { get; set; }
-        public string Book { get; set; }
-        public string Availability { get; set; }
+    //    }
+    //    public List<Books> ReadingBooks { get; set; }
+    //    public string Name { get; set; }
+    //    public string Author { get; set; }
+    //    public int ISBN { get; set; }
+    //    public string Book { get; set; }
+    //    public string Availability { get; set; }
 
-    }
+    //}
 }
