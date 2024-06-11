@@ -23,8 +23,8 @@
 
         <TextBlock TextWrapping="Wrap" Text="Add Image" VerticalAlignment="Top" FontFamily="Cambria" FontSize="16" Margin="477,249,218,0" Width="105" TextAlignment="Center"/>
         <Button Content="Search Image" Margin="477,271,218,143" FontFamily="Cambria" FontSize="16" Background="#FFCDECFF"/>
-        
-        <Button Content="Add Book" Margin="311,342,311,70" FontFamily="Cambria" FontSize="20" Background="#FFCDECFF" Click="Button_Click"/>
+
+        <Button Content="Add Book" Margin="311,342,311,70" FontFamily="Cambria" FontSize="20" Background="#FFCDECFF" Click="AddBookBtnClick"/>
 
     </Grid>
 </Page>

@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:XAML_Final_Project"
         xmlns:Component="clr-namespace:XAML_Final_Project.Component" x:Class="XAML_Final_Project.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="#FFB14D4D">
-    <Grid>
-     
+        Title="MainWindow" Height="600" Width="1000" Background="#FFE6C2C2">
+    <Grid ShowGridLines="False" >
+        <Frame x:Name="NavFrame" Source="" Panel.ZIndex="2"  />
+        <Frame x:Name="MainAppFrame" Margin="0 60 0 0 "  Source="/Pages/Books.xaml" NavigationUIVisibility="Hidden" Panel.ZIndex="1" />
+
     </Grid>
 </Window>

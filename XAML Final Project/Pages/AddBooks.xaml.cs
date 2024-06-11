@@ -24,5 +24,10 @@ namespace XAML_Final_Project.Pages
         {
             InitializeComponent();
         }
+
+        private void AddBookBtnClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
