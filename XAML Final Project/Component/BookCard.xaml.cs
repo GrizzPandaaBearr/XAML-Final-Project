@@ -11,6 +11,7 @@ namespace XAML_Final_Project.Component
     public partial class BookCard : UserControl
     {
 
+
         public BookCard()
         {
 
@@ -20,6 +21,7 @@ namespace XAML_Final_Project.Component
         private void OnCheckOutItem(object sender, RoutedEventArgs e)
         {
             string uidString = uid.Text;
+
             MessageBox.Show(uidString);
 
         }

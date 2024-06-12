@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace XAML_Final_Project.Models
 {
@@ -14,9 +15,6 @@ namespace XAML_Final_Project.Models
         [BsonRepresentation(BsonType.ObjectId)]
         [BsonId]
         public ObjectId Id { get; set; }
-
-        public string IdAsString { get; set; }
-
 
         //data type
         [BsonRepresentation(BsonType.String)]

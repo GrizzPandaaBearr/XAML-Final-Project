@@ -17,41 +17,36 @@ namespace XAML_Final_Project.ViewModels
         public List<BookDTO> BooksCollectionList { get; set; }
         public IEnumerable<BookDTO> BooksCollectionAsEnumerable => BooksCollectionList;
 
+        private readonly IMongoDatabase? db;
         private readonly IMongoCollection<BookDTO>? DB_Results;
 
 
         public BookVM()
         {
-            IMongoDatabase? db = DatabaseConnect._database;
-            //DatabaseConnect.ListTheCollections();
-
-
-
+            db = DatabaseConnect._database;
             if (db != null)
             {
-
-
-                BsonDocument filter = new BsonDocument();
-                filter.Add("Author", "George Orwell");
-
-
-
-                IMongoCollection<BookDTO> DB_Results = db.GetCollection<BookDTO>("all_books");
-                //GetCollectionCount(DB_Results);
-                BooksCollectionList = DB_Results.Find(filter).SortBy(x => x.Name).ToList();
-
-
-
-
+                getTheCollection();
             }
 
+        }
 
+        private void getTheCollection()
+        {
+            //DatabaseConnect.ListTheCollections();
+
+            BsonDocument filter = new BsonDocument();
+            filter.Add("Author", "George Orwell");
+
+            IMongoCollection<BookDTO> DB_Results = db.GetCollection<BookDTO>("all_books");
+            //GetCollectionCount(DB_Results);
+            BooksCollectionList = DB_Results.Find(filter).SortBy(x => x.Name).ToList();
         }
 
         private void GetCollectionCount(IMongoCollection<BookDTO> c)
         {
             var resultsCount = c.CountDocuments(new BsonDocument());
-            MessageBox.Show($"Geeting Books Collection = {resultsCount}");
+            Debug.WriteLine($"Geeting Books Collection = {resultsCount}");
         }
     }
 }

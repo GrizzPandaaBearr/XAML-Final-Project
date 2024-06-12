@@ -39,7 +39,7 @@
                 <DataTemplate>
 
                     <!-- inherits the data context from ItemsControl -->
-                    <components:BookCard />
+                    <components:BookCard  />
 
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
