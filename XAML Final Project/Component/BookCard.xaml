@@ -55,8 +55,8 @@
 
                     <TextBlock x:Name="uid" Text="{Binding Id}" Visibility="Hidden" />
                 </WrapPanel>
-                <WrapPanel Grid.Column="1"  Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Button Content="Checkout" Grid.Column="1" Padding="20 12" Click="OnCheckOutItem"  />
+                <WrapPanel Background="Red" Grid.Column="1"  Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <Button Content="Checkout" Grid.Column="1" Padding="20 12" Click="OnCheckOutItem" HorizontalAlignment="Right"  />
                 </WrapPanel>
             </StackPanel>
         </Border>

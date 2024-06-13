@@ -36,7 +36,7 @@ namespace XAML_Final_Project.ViewModels
             //DatabaseConnect.ListTheCollections();
 
             BsonDocument filter = new BsonDocument();
-            filter.Add("Author", "George Orwell");
+          //  filter.Add("Author", "George Orwell");
 
             IMongoCollection<BookDTO> DB_Results = db.GetCollection<BookDTO>("all_books");
             //GetCollectionCount(DB_Results);
