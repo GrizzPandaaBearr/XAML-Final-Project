@@ -42,7 +42,6 @@ namespace XAML_Final_Project.Component
         {
 
         }
-
         public List<Admins> LoginAdmins { get; set; }
         public string Email { get; set; }
     }
