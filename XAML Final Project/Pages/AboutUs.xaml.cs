@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace XAML_Final_Project.Pages
 {
     /// <summary>
-    /// Interaction logic for MenuScreen.xaml
+    /// Interaction logic for AboutUs.xaml
     /// </summary>
-    public partial class MenuScreen : Page
+    public partial class AboutUs : Page
     {
-        public MenuScreen()
+        public AboutUs()
         {
             InitializeComponent();
         }
