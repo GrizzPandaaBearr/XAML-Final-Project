@@ -20,6 +20,7 @@ namespace XAML_Final_Project
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
