@@ -1,51 +1,30 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Timers;
-using System.Windows;
+﻿using System.Windows;
 using XAML_Final_Project.Utilities;
+using XAML_Final_Project.Windows;
 
 namespace XAML_Final_Project
 {
 
     public partial class App : Application
     {
+        private Splash? SplashScreen;
+
         private void Application_Startup(object sender, StartupEventArgs e)
         {
+
+            ShowSplashScreen();
             DatabaseConnect.EstablishConnection("XAML_Database");
-            onSplashStart();
+
         }
 
-
-        private void onSplashStart()
+        private void ShowSplashScreen()
         {
-            Debug.WriteLine("GO!");
-
-            System.Timers.Timer aTimer = new System.Timers.Timer();
-            aTimer.Interval = 3000;
-            aTimer.Elapsed += new ElapsedEventHandler(OnTick);
-            aTimer.Start();
-
-            DateTime today = DateTime.Now;
-            Debug.WriteLine(today.Date.TimeOfDay);
+            SplashScreen = new Splash();
+            SplashScreen.Owner = Application.Current.MainWindow as MainWindow;
+            SplashScreen.Show();
         }
 
 
-        private static void OnTick(object? source, ElapsedEventArgs? e)
-        {
-            System.Timers.Timer t = source as System.Timers.Timer;
-            t.Stop();
-            t.Dispose();
-
-          
-           MainWindow mw= new MainWindow();
-            mw.Show();
-        }
 
         private void Application_LoadCompleted(object sender, System.Windows.Navigation.NavigationEventArgs e)
         {

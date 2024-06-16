@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:XAML_Final_Project"
         xmlns:Component="clr-namespace:XAML_Final_Project.Component" x:Class="XAML_Final_Project.MainWindow"
         mc:Ignorable="d"
+        x:Name="AppMainWindow"
         Title="MainWindow" Height="600" Width="1000" Background="#FFE6C2C2">
     <Grid ShowGridLines="False" >
         <Frame x:Name="NavFrame" Source="" Panel.ZIndex="2"  />

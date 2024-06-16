@@ -12,8 +12,8 @@
     <Grid RenderTransformOrigin="0.502,0.469">
         <Image Source="/Assets/Logo.png"  Width="200"  />
 
-        <TextBlock TextWrapping="Wrap" Text="Y O O B E E L I B R A R Y " FontFamily="Segoe Print" Foreground="White" FontWeight="Bold" FontSize="16" Margin="135,84,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="235"/>
-        <TextBlock TextWrapping="Wrap" Text="Discover the World Within Books" Margin="150,342,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Poor Richard" FontSize="16" Width="207" Foreground="White"/>
+        <TextBlock TextWrapping="NoWrap" Text="Y O O B E E L I B R A R Y " FontFamily="Segoe Print" Foreground="White" FontWeight="Bold" FontSize="16" Margin="135,84,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="235"/>
+        <TextBlock TextWrapping="NoWrap" Text="Discover the World Within Books"  VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Poor Richard" FontSize="16" Width="270" Foreground="White" Margin="136,337,0,0"/>
         <ProgressBar Width="320" Foreground="White" HorizontalAlignment="Center" Margin="0,374,0,57" IsIndeterminate="True" Background="CornflowerBlue" />
 
     </Grid>
