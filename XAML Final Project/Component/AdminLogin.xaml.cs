@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace XAML_Final_Project.Pages
+namespace XAML_Final_Project.Component
 {
     /// <summary>
-    /// Interaction logic for AddBooks.xaml
+    /// Interaction logic for AdminLogin.xaml
     /// </summary>
-    public partial class AddBooks : Page
+    public partial class AdminLogin : Page
     {
-        public AddBooks()
+        public AdminLogin()
         {
             InitializeComponent();
-        }
-
-        private void AddBookBtnClick(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

@@ -25,4 +25,24 @@ namespace XAML_Final_Project.Component
             InitializeComponent();
         }
     }
+     class Members
+    {
+        public Members()
+        {
+
+        }
+
+        public List<Members> LoginMembers { get; set; }
+        public string Email { get; set; }
+    }
+
+    class Admins
+    {
+        public Admins()
+        {
+
+        }
+        public List<Admins> LoginAdmins { get; set; }
+        public string Email { get; set; }
+    }
 }

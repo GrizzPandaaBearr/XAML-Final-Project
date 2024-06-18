@@ -4,23 +4,59 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:XAML_Final_Project.Pages"
+      xmlns:vm="clr-namespace:XAML_Final_Project.ViewModels"
+      xmlns:components="clr-namespace:XAML_Final_Project.Component"
+      xmlns:converters="clr-namespace:XAML_Final_Project.Converters"
+      d:DesignHeight="450" d:DesignWidth="800"
       mc:Ignorable="d" 
-      d:DesignHeight="800" d:DesignWidth="1000"
+      Background="Beige"
       Title="BOOKS"
-      Background="AliceBlue">
+      >
 
-    <Grid>
+    <Page.DataContext >
+        <vm:BookVM />
+    </Page.DataContext>
+
+    <Page.Resources>
+        <converters:Base64ToBitmap x:Key="Base64Converter" />
+        <Style TargetType="TextBlock" x:Key="SimpleData" >
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="Foreground" Value="Black" />
+        </Style>
+    </Page.Resources>
+
+
+
+    <Grid ShowGridLines="False">
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" FontSize="28" Text="Products" />
+
+
+        <ScrollViewer Grid.Row="1"  Height="400" >
+            <ItemsControl x:Name="AllBooksItemControl"   ItemsSource="{Binding BooksCollectionAsEnumerable}" ButtonBase.Click="Btn_Click" >
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+
+
+
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <!-- inherits the data context from ItemsControl -->
+                        <components:BookCard Margin="0,20,0,0"  />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+
+
+            </ItemsControl>
+        </ScrollViewer>
+
     </Grid>
+
 </Page>

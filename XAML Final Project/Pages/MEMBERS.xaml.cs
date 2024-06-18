@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace XAML_Final_Project.Pages
 {
     /// <summary>
-    /// Interaction logic for AddBooks.xaml
+    /// Interaction logic for MEMBERS.xaml
     /// </summary>
-    public partial class AddBooks : Page
+    public partial class MEMBERS : Page
     {
-        public AddBooks()
+        public MEMBERS()
         {
             InitializeComponent();
-        }
-
-        private void AddBookBtnClick(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
