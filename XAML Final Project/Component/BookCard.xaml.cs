@@ -18,12 +18,12 @@ namespace XAML_Final_Project.Component
             InitializeComponent();
         }
 
-        private void OnCheckOutItem(object sender, RoutedEventArgs e)
-        {
-            string uidString = uid.Text;
+        //private void OnCheckOutItem(object sender, RoutedEventArgs e)
+        //{
+        //    string uidString = uid.Text;
 
-            MessageBox.Show(uidString);
+        //    MessageBox.Show(uidString);
 
-        }
+        //}
     }
 }

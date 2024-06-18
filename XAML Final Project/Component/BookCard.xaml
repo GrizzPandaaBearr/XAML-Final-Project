@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:XAML_Final_Project.Component"
              xmlns:converters="clr-namespace:XAML_Final_Project.Converters"
+             xmlns:vm="clr-namespace:XAML_Final_Project.ViewModels"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              d:Background="AliceBlue"
@@ -12,6 +13,9 @@
     <UserControl.Resources>
         <converters:Base64ToBitmap x:Key="Base64Converter" />
         <converters:AvailabilityToBoolean x:Key="AvailabilityToBoolConverter" />
+        <Style TargetType="Button" >
+            <Setter Property="Cursor" Value="Hand" />
+        </Style>
         <Style TargetType="TextBlock" >
             <Setter Property="FontSize" Value="14"></Setter>
             <Setter Property="Foreground" Value="Black" />
@@ -21,6 +25,8 @@
             <Setter Property="Padding" Value="0 0 0 6" />
         </Style>
     </UserControl.Resources>
+
+
 
     <Grid Margin="5 0" ShowGridLines="False">
         <Grid.ColumnDefinitions>
@@ -34,7 +40,6 @@
 
 
         <StackPanel Margin="10 0 0 0" Grid.Column="1" Orientation="Vertical" d:Background="Aquamarine" VerticalAlignment="Top"  >
-            <TextBlock x:Name="uid" Text="{Binding Id}" Visibility="Collapsed" />
             <TextBlock >
                      <Run>Title: </Run> <Run Text="{Binding Name}"></Run>
             </TextBlock>
@@ -54,12 +59,14 @@
             <CheckBox x:Name="AvailabilityCheckBox" IsChecked="{Binding Availability, Converter={StaticResource AvailabilityToBoolConverter}}" />
             -->
 
-                <TextBlock>
+            <TextBlock>
                     <Run>Availability: </Run> <Run Text="{Binding Availability}"></Run>
-                </TextBlock>
+            </TextBlock>
 
-            <Button Content="Checkout" Margin="0 8" Padding="20 8" Click="OnCheckOutItem" HorizontalAlignment="Center"   />
-            
+            <!-- Click="OnCheckOutItem" -->
+            <Button x:Name="CheckOutBtn" Content="Checkout" Margin="0 8" Padding="20 8"  HorizontalAlignment="Center" />
+
+
         </StackPanel>
 
 

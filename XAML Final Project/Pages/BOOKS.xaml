@@ -10,7 +10,8 @@
       d:DesignHeight="450" d:DesignWidth="800"
       mc:Ignorable="d" 
       Background="Beige"
-      Title="BOOKS">
+      Title="BOOKS"
+      >
 
     <Page.DataContext >
         <vm:BookVM />
@@ -24,6 +25,8 @@
         </Style>
     </Page.Resources>
 
+
+
     <Grid ShowGridLines="False">
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
@@ -32,28 +35,28 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" FontSize="28" Text="Products" />
 
-  
-        <ScrollViewer Grid.Row="1"  Height="400"  >
-        <ItemsControl x:Name="AllBooksItemControl"   ItemsSource="{Binding BooksCollectionAsEnumerable}" >
+
+        <ScrollViewer Grid.Row="1"  Height="400" >
+            <ItemsControl x:Name="AllBooksItemControl"   ItemsSource="{Binding BooksCollectionAsEnumerable}" ButtonBase.Click="Btn_Click" >
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
                         <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
-            
-                <ItemsControl.ItemTemplate>
 
+
+
+                <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <!-- inherits the data context from ItemsControl -->
-                          <components:BookCard Margin="0,20,0,0" />
-              
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
+                        <components:BookCard Margin="0,20,0,0"  />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
 
 
-        </ItemsControl>
-     </ScrollViewer>
-       
+            </ItemsControl>
+        </ScrollViewer>
+
     </Grid>
 
 </Page>
