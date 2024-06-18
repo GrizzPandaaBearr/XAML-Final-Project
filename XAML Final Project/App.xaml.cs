@@ -12,7 +12,7 @@ namespace XAML_Final_Project
         private void Application_Startup(object sender, StartupEventArgs e)
         {
 
-            ShowSplashScreen();
+            // ShowSplashScreen();
             DatabaseConnect.EstablishConnection("XAML_Database");
 
         }

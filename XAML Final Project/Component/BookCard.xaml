@@ -4,69 +4,68 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:XAML_Final_Project.Component"
-                xmlns:converters="clr-namespace:XAML_Final_Project.Converters"
+             xmlns:converters="clr-namespace:XAML_Final_Project.Converters"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             d:Background="AliceBlue"
+             >
     <UserControl.Resources>
         <converters:Base64ToBitmap x:Key="Base64Converter" />
+        <converters:AvailabilityToBoolean x:Key="AvailabilityToBoolConverter" />
         <Style TargetType="TextBlock" >
-            <Setter Property="FontSize" Value="18"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
             <Setter Property="Foreground" Value="Black" />
             <Setter Property="SnapsToDevicePixels" Value="True" />
+            <Setter Property="Width" Value="160" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="Padding" Value="0 0 0 6" />
         </Style>
     </UserControl.Resources>
 
-    <Grid Margin="5 0" ShowGridLines="True">
+    <Grid Margin="5 0" ShowGridLines="False">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+
         </Grid.ColumnDefinitions>
 
 
-        <Image HorizontalAlignment="Left" Grid.Column="0" x:Name="BookImage" Width="100" Source="{Binding Image, Converter={StaticResource Base64Converter}}"  />
+        <Image VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="0" x:Name="BookImage" Width="100" Source="{Binding Image, Converter={StaticResource Base64Converter}}"  />
 
-         
-            <StackPanel Grid.Column="1" Orientation="Horizontal"   >
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                </Grid>
-                <StackPanel Grid.Column="0" Orientation="Vertical">
-                    <TextBlock>
+
+        <StackPanel Margin="10 0 0 0" Grid.Column="1" Orientation="Vertical"   >
+
+            <TextBlock >
                      <Run>Title: </Run> <Run Text="{Binding Name}"></Run>
-                    </TextBlock>
+            </TextBlock>
 
 
-                    <TextBlock>
+            <TextBlock>
                     <Run>Author: </Run> <Run Text="{Binding Author}"></Run>
-                    </TextBlock>
+            </TextBlock>
 
-                    <TextBlock>
-                    <Run>Booking: </Run> <Run Text="{Binding Book}"></Run>
-                    </TextBlock>
-
-                    <TextBlock>
-                    <Run>Availability: </Run> <Run Text="{Binding Availability}"></Run>
-                    </TextBlock>
-
-                    <TextBlock>
+            <TextBlock>
                       <Run>ISBN: </Run> <Run Text="{Binding Isbn}"></Run>
-                    </TextBlock>
+            </TextBlock>
 
-                    <TextBlock x:Name="uid" Text="{Binding Id}" Visibility="Hidden" />
-                </StackPanel>
+            <!--<TextBlock>
+                    <Run>Booking: </Run> <Run Text="{Binding Book}"></Run>
+                </TextBlock>
 
-            <StackPanel Grid.Column="1" Background="red" HorizontalAlignment="Right" VerticalAlignment="Center">
-                <Button  Content="Checkout" Padding="20 12" Click="OnCheckOutItem"   />
-             </StackPanel>
-                
-            </StackPanel> 
-       
-          
-       
+                <TextBlock>
+                    <Run>Availability: </Run> <Run Text="{Binding Availability}"></Run>
+                </TextBlock> -->
+
+            <CheckBox x:Name="AvailabilityCheckBox" IsChecked="{Binding Availability, Converter={StaticResource AvailabilityToBoolConverter}}" />
+
+            <Button  Content="Checkout" Margin="0 12" Padding="20 8" Click="OnCheckOutItem" HorizontalAlignment="Center" VerticalAlignment="Top"  />
+            <TextBlock x:Name="uid" Text="{Binding Id}" Visibility="Collapsed" />
+
+
+        </StackPanel>
+
+
+
         <!-- store unique id - we may need if for the booking-->
 
 
