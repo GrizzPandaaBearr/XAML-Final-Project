@@ -24,13 +24,24 @@
             <TextBlock TextWrapping="Wrap" Text="Sign In to YOOBEE Library" Margin="134,43,0,0" FontSize="24" HorizontalAlignment="Left" TextAlignment="Center" FontFamily="Cambria" VerticalAlignment="Top" Width="182"/>
 
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" FontFamily="Cambria" FontSize="16" Margin="0,111,0,0" Width="83"/>
-            <TextBox HorizontalAlignment="Left" Height="40" Margin="0,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
+            <TextBox HorizontalAlignment="Left" Height="40" Margin="0,136,0,0" TextWrapping="Wrap" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="450" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
 
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontFamily="Cambria" FontSize="16" Margin="0,186,0,0" Width="83"/>
-            <PasswordBox HorizontalAlignment="Left" Height="40" Margin="0,210,0,0" VerticalAlignment="Top" Width="450" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
+            <PasswordBox HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="40" Margin="0,210,0,0" VerticalAlignment="Top" Width="450" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
             <CheckBox Content="Remember Me" HorizontalAlignment="Left" Margin="0,269,0,88" Height="28" Width="151" FontSize="18" FontFamily="Cambria"/>
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Forget Password?" VerticalAlignment="Top" FontFamily="Cambria" FontSize="18" Margin="313,268,0,0" Width="137"/>
-            <Button Content="Log In" HorizontalAlignment="Left" Height="45" Margin="0,302,0,0" VerticalAlignment="Top" Width="450" Background="SkyBlue" FontSize="20" FontFamily="Cambria"/>
+            <Button Click="OnLogInClicked" Cursor="Hand" Content="Log In" HorizontalAlignment="Left" Height="45" Margin="0,302,0,0" VerticalAlignment="Top" Width="450" Background="SkyBlue" FontSize="20" FontFamily="Cambria"/>
+            <!-- <Expander Header="Show More Information"  >
+                <TextBlock Margin="24 6 0 0">
+                Passwords must meet the following requirements.<LineBreak/>
+                1. Length must be 12 characters or more.<LineBreak/>
+                2. Must include letters, numbers and symbols.<LineBreak/>
+                3. Must include upper and lower case letters.
+                </TextBlock>
+            </Expander> -->
+
         </Grid>
+
+
     </Grid>
 </UserControl>

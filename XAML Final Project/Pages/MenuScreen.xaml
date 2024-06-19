@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MenuScreen"
-      Background="White">
+      Background="FloralWhite">
 
     <Grid>
         <Rectangle Fill="#FF9FCBFF" Margin="0,400,0,0"/>

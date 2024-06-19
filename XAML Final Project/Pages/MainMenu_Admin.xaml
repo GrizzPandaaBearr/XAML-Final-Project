@@ -6,6 +6,7 @@
       xmlns:local="clr-namespace:XAML_Final_Project.Component"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+      Margin="10"
       Title="MainMenu_Admin">
 
     <Grid>
@@ -15,16 +16,16 @@
                 BorderBrush="SkyBlue"
                 BorderThickness="3"
                 VerticalAlignment="Top"
-                HorizontalAlignment="Center"
-                Margin="0,75,0,0"
+                HorizontalAlignment="Left"
+                Margin="0,0,0,0"
                 CornerRadius="5"/>
 
         <Menu Height="30"
               Width="630"
               Background="SkyBlue"
               VerticalAlignment="Top"
-              HorizontalAlignment="Center"
-              Margin="0,80,0,0">
+              HorizontalAlignment="Left"
+              Margin="0,0,0,0">
             <MenuItem Header="Home"
                       Height="30"
                       Width="90"
@@ -77,31 +78,41 @@
                       Width="90"
                       HorizontalAlignment="Center" 
                       FontSize="18" 
-                      FontFamily="Cambria">
+                      FontFamily="Cambria" >
                 <MenuItem.Icon>
                     <Image Source="/Assets/Books.png" />
                 </MenuItem.Icon>
 
-                <MenuItem>
-                    <MenuItem Header="Modify Book's Information" 
+                <MenuItem Header="View All Books" 
+               Background="SkyBlue"
+               FontSize="18"
+               FontFamily="Cambria" Click="View_All_Books">
+                    <MenuItem.Icon>
+                        <Image Source="/Assets/ModifyBooks.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+
+
+                <MenuItem Header="Modify Book's Information" 
                               Background="SkyBlue"
                               FontSize="18"
                               FontFamily="Cambria">
-                        <MenuItem.Icon>
-                            <Image Source="/Assets/ModifyBooks.png"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
+                    <MenuItem.Icon>
+                        <Image Source="/Assets/ModifyBooks.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
 
-                    <MenuItem Header="Add Books" 
+                <MenuItem Header="Add Books" 
                               Background="SkyBlue" 
                               FontSize="18"
                               FontFamily="Cambria">
-                        <MenuItem.Icon>
-                            <Image Source="/Assets/AddBooks.png"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
+                    <MenuItem.Icon>
+                        <Image Source="/Assets/AddBooks.png"/>
+                    </MenuItem.Icon>
                 </MenuItem>
+
             </MenuItem>
+
 
             <MenuItem Header="Members"
                       Height="30"
@@ -113,25 +124,25 @@
                     <Image Source="/Assets/Peoples.png" />
                 </MenuItem.Icon>
 
-                <MenuItem>
-                    <MenuItem Header="Modify Members's Information" 
+
+                <MenuItem Header="Modify Members's Information" 
                               Background="SkyBlue" 
                               FontSize="18"
                               FontFamily="Cambria">
-                        <MenuItem.Icon>
-                            <Image Source="/Assets/ModifyMembers.png"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
+                    <MenuItem.Icon>
+                        <Image Source="/Assets/ModifyMembers.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
 
-                    <MenuItem Header="Add Members" 
+                <MenuItem Header="Add Members" 
                               Background="SkyBlue"
                               FontSize="18"
                               FontFamily="Cambria">
-                        <MenuItem.Icon>
-                            <Image Source="/Assets/AddMembers.png"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
+                    <MenuItem.Icon>
+                        <Image Source="/Assets/AddMembers.png"/>
+                    </MenuItem.Icon>
                 </MenuItem>
+
             </MenuItem>
         </Menu>
     </Grid>

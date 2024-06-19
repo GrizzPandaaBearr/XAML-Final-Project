@@ -28,7 +28,7 @@
 
 
 
-    <Grid Margin="5 0" ShowGridLines="False">
+    <Grid Margin="10 0" ShowGridLines="False">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"></ColumnDefinition>
             <ColumnDefinition Width="Auto"></ColumnDefinition>
@@ -36,10 +36,10 @@
         </Grid.ColumnDefinitions>
 
 
-        <Image VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="0" x:Name="BookImage" Width="100" Source="{Binding Image, Converter={StaticResource Base64Converter}}"  />
+        <Image VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="0" x:Name="BookImage" Width="120" Source="{Binding Image, Converter={StaticResource Base64Converter}}"  />
 
 
-        <StackPanel Margin="10 0 0 0" Grid.Column="1" Orientation="Vertical" d:Background="Aquamarine" VerticalAlignment="Top"  >
+        <StackPanel Margin="8 0 0 0" Grid.Column="1" Orientation="Vertical" d:Background="CornflowerBlue" VerticalAlignment="Top"  >
             <TextBlock >
                      <Run>Title: </Run> <Run Text="{Binding Name}"></Run>
             </TextBlock>

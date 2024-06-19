@@ -8,10 +8,12 @@
         mc:Ignorable="d"
         x:Name="AppMainWindow"
     WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="600" Width="1000" Background="#FFE6C2C2">
+        Title="MainWindow" Height="600" Width="1000" Background="FloralWhite">
     <Grid ShowGridLines="False" >
-        <Frame x:Name="NavFrame" Source="" Panel.ZIndex="2"  />
-        <Frame x:Name="MainAppFrame" Margin="0 60 0 0 "  Source="/Pages/Books.xaml" NavigationUIVisibility="Hidden" Panel.ZIndex="1" />
 
+
+        <Frame x:Name="NavFrame" Source="/Pages/MainMenu_Admin.xaml" Panel.ZIndex="2" NavigationUIVisibility="Hidden" />
+        <Frame x:Name="MainAppFrame" Margin="0 60 0 0 "  Source="/Pages/MenuScreen.xaml" NavigationUIVisibility="Hidden" Panel.ZIndex="1" />
+        <Frame x:Name="LoginFrame" NavigationUIVisibility="Hidden" Panel.ZIndex="5" Source="/Pages/UserLogin.xaml"></Frame>
     </Grid>
 </Window>

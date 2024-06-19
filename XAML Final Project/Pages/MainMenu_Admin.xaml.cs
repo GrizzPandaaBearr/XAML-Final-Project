@@ -15,14 +15,25 @@ using System.Windows.Shapes;
 
 namespace XAML_Final_Project.Component
 {
-    /// <summary>
-    /// Interaction logic for MainMenu_Admin.xaml
-    /// </summary>
     public partial class MainMenu_Admin : Page
     {
         public MainMenu_Admin()
         {
             InitializeComponent();
         }
+
+        private static Frame GetApplicationMainFrame()
+        {
+            MainWindow w = (MainWindow)Application.Current.MainWindow;
+            Frame f = (Frame)w.MainAppFrame;
+            return f;
+        }
+
+        private void View_All_Books(object sender, RoutedEventArgs e)
+        {
+            GetApplicationMainFrame().NavigationService.Navigate(new Uri("/Pages/Books.xaml", UriKind.Relative));
+        }
+
+
     }
 }
