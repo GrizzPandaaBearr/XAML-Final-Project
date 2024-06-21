@@ -13,11 +13,15 @@
 	  <None Remove="Assets\AddBooks.png" />
 	  <None Remove="Assets\AddMembers.png" />
 	  <None Remove="Assets\Availability.png" />
+	  <None Remove="Assets\bluebook.png" />
+	  <None Remove="Assets\bluebook.svg" />
 	  <None Remove="Assets\Books.png" />
 	  <None Remove="Assets\bookss.jpg" />
 	  <None Remove="Assets\bookss1.jpg" />
 	  <None Remove="Assets\bookss2.jpg" />
 	  <None Remove="Assets\bookss3.jpg" />
+	  <None Remove="Assets\book_default.jpg" />
+	  <None Remove="Assets\default_book.png" />
 	  <None Remove="Assets\Facebook.png" />
 	  <None Remove="Assets\Home.png" />
 	  <None Remove="Assets\Instagram.png" />
@@ -46,6 +50,7 @@
 	  <Resource Include="Assets\bookss1.jpg" />
 	  <Resource Include="Assets\bookss2.jpg" />
 	  <Resource Include="Assets\bookss3.jpg" />
+	  <Resource Include="Assets\default_book.png" />
 	  <Resource Include="Assets\Facebook.png" />
 	  <Resource Include="Assets\Home.png" />
 	  <Resource Include="Assets\Instagram.png" />
