@@ -47,7 +47,7 @@ namespace XAML_Final_Project.Converters
 
         private BitmapImage DefaultBookImage()
         {
-          
+            // admins "test@test.com"
             BitmapImage myBitmapImage = new BitmapImage();
             myBitmapImage.BeginInit();
             myBitmapImage.UriSource = new Uri(@"/Assets/default_book.png", UriKind.RelativeOrAbsolute);
