@@ -5,33 +5,34 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:XAML_Final_Project.Component"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
-             Background="White">
+             d:DesignHeight="600" d:DesignWidth="1000"
+             d:Background="White">
 
-    <Grid HorizontalAlignment="Center" RenderTransformOrigin="0,0">
-        <Rectangle HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="300" Fill="SkyBlue"/>
-        <Rectangle HorizontalAlignment="Left" Height="450" Margin="300,0,0,0" VerticalAlignment="Center" Width="500"/>
+    <Grid >
+        <Rectangle HorizontalAlignment="Left" Height="600" VerticalAlignment="Center" Width="324" Fill="SkyBlue"/>
         <Polygon Points="0,20 230,140 0,270" Fill="#90E0EF"/>
-        <Polygon Points="100,400 200,370 180,470" Fill="#90E0EF" HorizontalAlignment="Left" Canvas.Top="-54" VerticalAlignment="Top" Height="504" Margin="-9,-80,0,0"/>
-        <Ellipse Height="40" Width="40" Fill="#90E0EF" Canvas.Left="229" Canvas.Top="400" Margin="205,400,555,10"/>
-        <Ellipse Height="20" Width="20" Fill="#90E0EF" Canvas.Left="36" Canvas.Top="343" Margin="38,355,742,75"/>
+        <Polygon Points="100,400 200,370 180,470" Fill="#90E0EF" HorizontalAlignment="Left" Canvas.Top="-54" VerticalAlignment="Top" Height="508" Margin="-9,-80,0,0" Width="276"/>
+        <Ellipse Height="40" Width="40" Fill="#90E0EF" Canvas.Left="229" Canvas.Top="400" Margin="248,505,712,55"/>
+        <Ellipse Height="20" Width="20" Fill="#90E0EF" Canvas.Left="36" Canvas.Top="343" Margin="81,485,899,95"/>
 
-        <TextBlock TextWrapping="Wrap" Text="YOOBEE Library" Margin="58,208,0,208" HorizontalAlignment="Left" FontSize="24" Width="184" FontFamily="Constantia"/>
-        <Grid x:Name="SignIn" HorizontalAlignment="Left" Margin="325,32,0,32" Width="465">
-            <Button Content="Sign Up" BorderBrush="SkyBlue" Background="SkyBlue" Foreground="Black" Width="104" HorizontalAlignment="Left" Margin="361,0,0,354" FontSize="20" FontFamily="Cambria"/>
+        <TextBlock TextWrapping="Wrap" Text="YOOBEE Library" Margin="64,244,0,325" HorizontalAlignment="Left" FontSize="24" Width="184" FontFamily="Constantia"/>
 
-            <TextBlock HorizontalAlignment="Left" Margin="96,2,0,0" TextWrapping="Wrap" Text="New to Library Member?" VerticalAlignment="Top" Width="265" FontSize="22" FontFamily="Cambria" Background="{x:Null}" TextAlignment="Center" Height="27"/>
-            <TextBlock TextWrapping="Wrap" Text="Sign In to YOOBEE Library" Margin="134,43,0,0" FontSize="24" HorizontalAlignment="Left" TextAlignment="Center" FontFamily="Cambria" VerticalAlignment="Top" Width="182"/>
+        <Button Content="Sign Up" BorderBrush="SkyBlue" Background="SkyBlue" Foreground="Black" Width="104" HorizontalAlignment="Left" Margin="878,27,0,529" FontSize="20" FontFamily="Cambria"/>
 
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" FontFamily="Cambria" FontSize="16" Margin="0,111,0,0" Width="83"/>
-            <TextBox HorizontalAlignment="Left" Height="40" Margin="0,136,0,0" TextWrapping="Wrap" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="450" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="596,38,0,0" TextWrapping="Wrap" Text="New to Library Member?" VerticalAlignment="Top" Width="265" FontSize="22" FontFamily="Cambria" Background="{x:Null}" TextAlignment="Center" Height="27"/>
+        <TextBlock TextWrapping="Wrap" Text="Sign In to YOOBEE Library" Margin="515,106,0,0" FontSize="36" HorizontalAlignment="Left" TextAlignment="Center" FontFamily="Cambria" VerticalAlignment="Top" Width="267" Height="83"/>
 
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontFamily="Cambria" FontSize="16" Margin="0,186,0,0" Width="83"/>
-            <PasswordBox HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="40" Margin="0,210,0,0" VerticalAlignment="Top" Width="450" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
-            <CheckBox Content="Remember Me" HorizontalAlignment="Left" Margin="0,269,0,88" Height="28" Width="151" FontSize="18" FontFamily="Cambria"/>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Forget Password?" VerticalAlignment="Top" FontFamily="Cambria" FontSize="18" Margin="313,268,0,0" Width="137"/>
-            <Button Click="OnLogInClicked" Cursor="Hand" Content="Log In" HorizontalAlignment="Left" Height="45" Margin="0,302,0,0" VerticalAlignment="Top" Width="450" Background="SkyBlue" FontSize="20" FontFamily="Cambria"/>
-            <!-- <Expander Header="Show More Information"  >
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" FontFamily="Cambria" FontSize="22" Margin="372,206,0,0" Width="104" Height="21"/>
+        <TextBox HorizontalAlignment="Left" Height="45" Margin="372,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="566" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontFamily="Cambria" FontSize="22" Margin="374,304,0,0" Width="104" Height="23"/>
+        <PasswordBox HorizontalAlignment="Left" Height="48" Margin="374,333,0,0" VerticalAlignment="Top" Width="566" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Forget Password?" VerticalAlignment="Top" FontFamily="Cambria" FontSize="22" Margin="772,405,0,0" Width="168" Height="21"/>
+        <Button Cursor="Hand" Click="OnLogInClicked" Content="Log In" HorizontalAlignment="Left" Height="45" Margin="438,472,0,0" VerticalAlignment="Top" Width="450" Background="SkyBlue" FontSize="20" FontFamily="Cambria"/>
+        <CheckBox Content="Remember Me" HorizontalAlignment="Left" Margin="380,408,0,0" VerticalAlignment="Top" BorderThickness="1,1,1,1" FontSize="22" Width="130" />
+        <Button  Content="Admin" BorderBrush="SkyBlue" Background="SkyBlue" Foreground="Black" Width="104" HorizontalAlignment="Left" Margin="511,569,0,2" FontSize="20" FontFamily="Cambria"/>
+        <TextBlock HorizontalAlignment="Left" Margin="326,569,0,0" TextWrapping="Wrap" Text="Are you an Admin?" VerticalAlignment="Top" Width="185" FontSize="22" FontFamily="Cambria" TextAlignment="Center" Height="29"/>
+        <!-- <Expander Header="Show More Information"  >
                 <TextBlock Margin="24 6 0 0">
                 Passwords must meet the following requirements.<LineBreak/>
                 1. Length must be 12 characters or more.<LineBreak/>
@@ -39,9 +40,7 @@
                 3. Must include upper and lower case letters.
                 </TextBlock>
             </Expander> -->
-
-        </Grid>
-
-
     </Grid>
 </UserControl>
+
+

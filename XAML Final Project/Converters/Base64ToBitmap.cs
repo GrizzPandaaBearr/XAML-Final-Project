@@ -29,14 +29,16 @@ namespace XAML_Final_Project.Converters
                 {
                     return BitmapFrame.Create(stream, BitmapCreateOptions.None, BitmapCacheOption.OnLoad);
                 }
-            } catch(System.ArgumentException ex)
+            }
+            catch (System.ArgumentException ex)
             {
                 Debug.WriteLine("++++ ", ex.Message);
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 Debug.WriteLine(message: "---- ", ex.Message);
             }
-    
+
             return DefaultBookImage();
         }
 
@@ -58,7 +60,7 @@ namespace XAML_Final_Project.Converters
 
         }
 
-        // show pink rect instead
+        // show pink rect instead, use DefaultBookImage instead
         private BitmapFrame DefaultBitmap()
         {
             byte[] bytes = System.Convert.FromBase64String("iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mP8z8BQz0AEYBxVSF+FABJADveWkH6oAAAAAElFTkSuQmCC");
