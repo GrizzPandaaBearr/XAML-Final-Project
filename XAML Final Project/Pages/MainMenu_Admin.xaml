@@ -82,9 +82,9 @@
                 <MenuItem.Icon>
                     <Image Source="/Assets/Books.png" />
                 </MenuItem.Icon>
+            
 
-                <MenuItem Header="View All Books" 
-               Background="SkyBlue"
+            <MenuItem Header="View All Books" Background="SkyBlue"
                FontSize="18"
                FontFamily="Cambria" Click="View_All_Books">
                     <MenuItem.Icon>

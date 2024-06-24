@@ -11,7 +11,7 @@
 
     <Grid>
         <Rectangle Fill="#FF9FCBFF" Margin="0,400,0,0"/>
-        <TextBlock TextWrapping="Wrap" Text="XXConnect With Us" Margin="171,412,0,0" FontFamily="Cambria" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock TextWrapping="Wrap" Text="Connect With Us" Margin="171,412,0,0" FontFamily="Cambria" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Image Source="/Assets/Twitter.png" Margin="443,408,322,7" />
         <Image Source="/Assets/Youtube.png" Margin="373,400,365,0" />
         <Image Source="/Assets/Instagram.png" Margin="491,408,273,7" />
