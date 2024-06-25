@@ -1,0 +1,33 @@
+﻿<Page x:Class="XAML_Final_Project.Pages.MenuScreen"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:XAML_Final_Project.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MenuScreen"
+      Background="FloralWhite">
+
+    <Grid>
+        <Rectangle Fill="#FF9FCBFF" Margin="0,400,0,0"/>
+        <TextBlock TextWrapping="Wrap" Text="Connect With Us" Margin="171,412,0,0" FontFamily="Cambria" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Image Source="/Assets/Twitter.png" Margin="443,408,322,7" />
+        <Image Source="/Assets/Youtube.png" Margin="373,400,365,0" />
+        <Image Source="/Assets/Instagram.png" Margin="491,408,273,7" />
+        <Image Source="/Assets/LinkedIn.png" Margin="588,407,177,7" />
+        <Image Source="/Assets/Facebook.png" Margin="540,405,223,7" />
+        <Image Source="/Assets/bookss1.jpg" Margin="400,-2,0,250" Stretch="Fill" Opacity="0.3" />
+        <Image Source="/Assets/bookss2.jpg" Margin="0,200,400,50" Stretch="Fill" Opacity="0.3" />
+        <Image Source="/Assets/bookss3.jpg" Stretch="Fill" Margin="400,200,0,50" Opacity="0.3" />
+        <Image Source="/Assets/bookss.jpg" Margin="0,0,400,250" Stretch="Fill" Opacity="0.3" />
+        <TextBlock TextWrapping="Wrap" Text="About Us" Margin="83,87,0,323" FontFamily="Cambria" FontSize="36" HorizontalAlignment="Left" FontWeight="Bold"/>
+        <TextBlock TextWrapping="Wrap" Text="Welcome to our library! Our mission is to provide a welcoming and inclusive environment for everyone in the community to explore, learn, and grow. Our team of dedicated staff is passionate about connecting people with the information and resources they need to succeed. With a vast collection of books, media, and digital materials, we strive to stay ahead of the curve in meeting the evolving needs of our patrons. Whether you're a student, researcher, or simply looking for a good read, we're here to support you every step of the way." Margin="20,133,492,0" FontFamily="Cambria" VerticalAlignment="Top" TextAlignment="Justify" FontSize="16" Height="268"/>
+        <TextBlock TextWrapping="Wrap" Text="Books Collection" Margin="498,85,0,325" FontFamily="Cambria" FontSize="36" HorizontalAlignment="Left" FontWeight="Bold" Width="278"/>
+        <TextBlock TextWrapping="Wrap" Text="We have lots of books collection that you may either read on the spot or you can borrow it from us and read it at home." Margin="490,129,22,0" FontFamily="Cambria" VerticalAlignment="Top" TextAlignment="Justify" FontSize="16" Height="60"/>
+
+
+
+
+    </Grid>
+</Page>

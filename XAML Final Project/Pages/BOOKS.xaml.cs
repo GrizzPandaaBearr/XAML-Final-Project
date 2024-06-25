@@ -33,7 +33,7 @@ namespace XAML_Final_Project.Pages
         {
             Button button = (Button)e.OriginalSource;
 
-            // grab the dataContext for this button
+            // grab the dataContext/value for this button
             var code = ((BookDTO)button.DataContext).Id;
 
             MessageBox.Show(code.ToString()); ;

@@ -24,25 +24,23 @@ namespace XAML_Final_Project.Component
         {
             InitializeComponent();
         }
-    }
-     class Members
-    {
-        public Members()
-        {
 
+
+
+        private static Frame GetApplicationLoginFrame()
+        {
+            MainWindow w = (MainWindow)Application.Current.MainWindow;
+            Frame f = (Frame)w.LoginFrame;
+            return f;
         }
 
-        public List<Members> LoginMembers { get; set; }
-        public string Email { get; set; }
-    }
 
-    class Admins
-    {
-        public Admins()
+
+        private void OnLogInClicked(object sender, RoutedEventArgs e)
         {
-
+            GetApplicationLoginFrame().Visibility = Visibility.Hidden;
         }
-        public List<Admins> LoginAdmins { get; set; }
-        public string Email { get; set; }
     }
+
+
 }
