@@ -1,0 +1,56 @@
+﻿<Page x:Class="XAML_Final_Project.Pages.AboutUs"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:XAML_Final_Project.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="AboutUs"
+      Background="White">
+    <Page.Resources>
+        <Style TargetType="Image" x:Key="Icons" >
+            <Setter Property="Width" Value="60" />
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+
+        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <WrapPanel Width="300">
+                <TextBlock TextWrapping="Wrap" Text="About Us" Margin="104,10,0,0" FontFamily="Cambria" FontSize="24" HorizontalAlignment="Left" FontWeight="Bold" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="Welcome to our library! Our mission is to provide a welcoming and inclusive environment for everyone in the community to explore, learn, and grow. Our team of dedicated staff is passionate about connecting people with the information and resources they need to succeed. With a vast collection of books, media, and digital materials, we strive to stay ahead of the curve in meeting the evolving needs of our patrons. Whether you're a student, researcher, or simply looking for a good read, we're here to support you every step of the way." Margin="20,0,0,0" FontFamily="Cambria" VerticalAlignment="Top" TextAlignment="Justify" FontSize="18" />
+            </WrapPanel>
+
+            <WrapPanel>
+                <TextBlock TextWrapping="Wrap" Text="Books Collection" Margin="0,10,0,0" FontFamily="Cambria" FontSize="24" HorizontalAlignment="Left" FontWeight="Bold" Width="184" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" FontFamily="Cambria" VerticalAlignment="Top" TextAlignment="Justify" FontSize="18" Height="170" HorizontalAlignment="Left" Width="312" ><Run Text="Items borrowed from the library must be returned by the due date specified at checkout. Late returns may incur fines, which vary depending on the type of material and the duration of the delay. Patrons are responsible for any lost or damaged items and will be charged accordingly for their replacement."/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+            </WrapPanel>
+
+            <WrapPanel>
+                <TextBlock TextWrapping="Wrap" Text="Return Policy" Margin="0,10,0,0" FontFamily="Cambria" FontSize="24" HorizontalAlignment="Left" FontWeight="Bold" Width="152" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="Items borrowed from the library must be returned by the due date specified at checkout. Late returns may incur fines, which vary depending on the type of material and the duration of the delay. Patrons are responsible for any lost or damaged items and will be charged accordingly for their replacement." Margin="696,200,34,0" FontFamily="Cambria" VerticalAlignment="Top" TextAlignment="Justify" FontSize="18" Height="220"/>
+
+            </WrapPanel>
+
+        </WrapPanel>
+
+        <TextBlock TextWrapping="Wrap" Text="Contact  Us" Margin="330,563,0,0" FontFamily="Cambria" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+
+
+
+
+        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Image Style="{StaticResource Icons}" Source="/Assets/Twitter.png"   />
+            <Image Style="{StaticResource Icons}" Source="/Assets/Youtube.png"  />
+            <Image Style="{StaticResource Icons}" Source="/Assets/Instagram.png"  />
+            <Image Style="{StaticResource Icons}" Source="/Assets/LinkedIn.png"  />
+            <Image Style="{StaticResource Icons}" Source="/Assets/Facebook.png"  />
+        </WrapPanel>
+
+        <Image  Source="/Assets/bookss1.jpg"  Stretch="Fill" Opacity="0.3" />
+
+    </Grid>
+</Page>
