@@ -1,0 +1,39 @@
+﻿<Page x:Class="XAML_Final_Project.Pages.UserSignup"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:XAML_Final_Project.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="UserSignup"
+      Background="White">
+
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="600" VerticalAlignment="Center" Width="300" Fill="SkyBlue"/>
+        <Polygon Points="0,20 230,140 0,270" Fill="#90E0EF"/>
+        <Polygon Points="100,400 200,370 180,470" Fill="#90E0EF" HorizontalAlignment="Left" VerticalAlignment="Top" Height="504" Margin="0,-31,0,0"/>
+        <Ellipse Height="40" Width="40" Fill="#90E0EF" Margin="246,456,714,104"/>
+        <Ellipse Height="20" Width="20" Fill="#90E0EF" Margin="53,438,927,142"/>
+
+        <TextBlock TextWrapping="Wrap" Text="YOOBEE Library" Margin="58,208,0,208" HorizontalAlignment="Left" FontSize="24" Width="184" FontFamily="Constantia"/>
+        <Button Content="Login" BorderBrush="SkyBlue" Background="SkyBlue" Foreground="Black" Width="104" HorizontalAlignment="Left" Margin="872,23,0,545" FontSize="20" FontFamily="Cambria"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="657,23,0,0" TextWrapping="Wrap" Text="Already a member?" VerticalAlignment="Top" Width="200" FontSize="22" FontFamily="Cambria" TextAlignment="Center" Height="27"/>
+        <TextBlock TextWrapping="Wrap" Text="Sign Up to YOOBEE Library" Margin="505,64,0,0" FontSize="36" HorizontalAlignment="Left" TextAlignment="Center" FontFamily="Cambria" VerticalAlignment="Top" Width="253"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="UserName" VerticalAlignment="Top" FontFamily="Cambria" FontSize="16" Margin="345,157,0,0" Width="109"/>
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="345,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="596" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" FontFamily="Cambria" FontSize="16" Margin="343,227,0,0" Width="108"/>
+        <TextBox HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="596" FontFamily="Cambria" FontSize="16" BorderBrush="Black" Margin="343,248,0,0"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontFamily="Cambria" FontSize="16" Margin="345,293,0,0" Width="109"/>
+        <PasswordBox HorizontalAlignment="Left" Height="40" Margin="345,317,0,0" VerticalAlignment="Top" Width="596" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Confirm Password" VerticalAlignment="Top" FontFamily="Cambria" FontSize="16" Margin="346,362,0,0" Width="170"/>
+        <PasswordBox HorizontalAlignment="Left" Height="40" Margin="346,386,0,0" VerticalAlignment="Top" Width="596" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
+        <Button Content="Sign Up" Margin="474,439,174,128" Background="skyBlue" FontFamily="Cambria" FontSize="20" />
+
+    </Grid>
+</Page>

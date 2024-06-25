@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace XAML_Final_Project.Component
+namespace XAML_Final_Project.Pages
 {
     /// <summary>
-    /// Interaction logic for SignUp_Screen.xaml
+    /// Interaction logic for UserLogin.xaml
     /// </summary>
-    public partial class SignUp_Screen : UserControl
+    public partial class UserLogin : Page
     {
-        public SignUp_Screen()
+        public UserLogin()
         {
             InitializeComponent();
         }

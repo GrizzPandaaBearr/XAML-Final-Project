@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace XAML_Final_Project.Component
+namespace XAML_Final_Project.Pages
 {
     /// <summary>
     /// Interaction logic for AdminLogin.xaml

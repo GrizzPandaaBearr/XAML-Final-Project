@@ -8,26 +8,69 @@
       d:DesignHeight="600" d:DesignWidth="1000"
       Title="AboutUs"
       Background="White">
+    <Page.Resources>
+        <Style TargetType="Image" x:Key="Icons" >
+            <Setter Property="Width" Value="36" />
+            <Setter Property="Margin" Value="10"/>
+           
+        </Style>
+        
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Cambria" />
+        </Style>
+        
+        <Style TargetType="TextBlock"  x:Key="BodyText" >
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="TextWrapping" Value="WrapWithOverflow" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="FontSize" Value="19" />
+            <Setter Property="FontFamily" Value="Cambria" />
+            <Setter Property="TextAlignment" Value="Justify"/>
+        </Style>
+ 
+    </Page.Resources>
+
+    
 
     <Grid>
-        <Rectangle Fill="#FF9FCBFF" Margin="0,550,0,0"/>
-        <TextBlock TextWrapping="Wrap" Text="Contact  Us" Margin="330,563,0,0" FontFamily="Cambria" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Image Source="/Assets/Twitter.png" Margin="546,562,421,9" />
-        <Image Source="/Assets/Youtube.png" Margin="502,558,464,6" />
-        <Image Source="/Assets/Instagram.png" Margin="448,560,502,8" />
-        <Image Source="/Assets/LinkedIn.png" Margin="584,560,386,8" />
-        <Image Source="/Assets/Facebook.png" Margin="620,559,344,7" />
-        <Image Source="/Assets/bookss1.jpg" Margin="500,0,0,325" Stretch="Fill" Opacity="0.3" />
-        <Image Source="/Assets/bookss2.jpg" Margin="0,275,500,50" Stretch="Fill" Opacity="0.3" />
-        <Image Source="/Assets/bookss3.jpg" Stretch="Fill" Margin="500,275,0, 50" Opacity="0.3" />
-        <Image Source="/Assets/bookss.jpg" Margin="0,0,500,325" Stretch="Fill" Opacity="0.3" />
-        <TextBlock TextWrapping="Wrap" Text="About Us" Margin="105,170,0,0" FontFamily="Cambria" FontSize="24" HorizontalAlignment="Left" FontWeight="Bold" VerticalAlignment="Top"/>
-        <TextBlock TextWrapping="Wrap" Text="Welcome to our library! Our mission is to provide a welcoming and inclusive environment for everyone in the community to explore, learn, and grow. Our team of dedicated staff is passionate about connecting people with the information and resources they need to succeed. With a vast collection of books, media, and digital materials, we strive to stay ahead of the curve in meeting the evolving needs of our patrons. Whether you're a student, researcher, or simply looking for a good read, we're here to support you every step of the way." Margin="20,204,694,0" FontFamily="Cambria" VerticalAlignment="Top" TextAlignment="Justify" FontSize="18" Height="344"/>
-        <TextBlock TextWrapping="Wrap" Text="Books Collection" Margin="398,170,0,0" FontFamily="Cambria" FontSize="24" HorizontalAlignment="Left" FontWeight="Bold" Width="184" VerticalAlignment="Top"/>
-        <TextBlock TextWrapping="Wrap" FontFamily="Cambria" VerticalAlignment="Top" TextAlignment="Justify" FontSize="18" Height="170" HorizontalAlignment="Center" Width="312" Margin="0,204,0,0"><Run Text="Items borrowed from the library must be returned by the due date specified at checkout. Late returns may incur fines, which vary depending on the type of material and the duration of the delay. Patrons are responsible for any lost or damaged items and will be charged accordingly for their replacement."/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
 
-        <TextBlock TextWrapping="Wrap" Text="Return Policy" Margin="758,170,0,0" FontFamily="Cambria" FontSize="24" HorizontalAlignment="Left" FontWeight="Bold" Width="152" VerticalAlignment="Top"/>
-        <TextBlock TextWrapping="Wrap" Text="Items borrowed from the library must be returned by the due date specified at checkout. Late returns may incur fines, which vary depending on the type of material and the duration of the delay. Patrons are responsible for any lost or damaged items and will be charged accordingly for their replacement." Margin="696,204,34,0" FontFamily="Cambria" VerticalAlignment="Top" TextAlignment="Justify" FontSize="18" Height="220"/>
+        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            
+            <WrapPanel Width="300">
+                <TextBlock  Text="About Us" Margin="104,10,0,0" FontSize="24" HorizontalAlignment="Center" FontWeight="Bold" />
+                <TextBlock Style="{StaticResource BodyText}"  Text="Welcome to our library! Our mission is to provide a welcoming and inclusive environment for everyone in the community to explore, learn, and grow. Our team of dedicated staff is passionate about connecting people with the information and resources they need to succeed. " Margin="20,0,0,0"  />
+                <TextBlock Style="{StaticResource BodyText}" Text="With a vast collection of books, media, and digital materials, we strive to stay ahead of the curve in meeting the evolving needs of our patrons. Whether you're a student, researcher, or simply looking for a good read, we're here to support you every step of the way." Margin="20,-10,0,0"/>
+            </WrapPanel>
+
+            <WrapPanel Width="300">
+                <TextBlock  Text="Books Collection" Margin="60,10,0,0" FontSize="24" HorizontalAlignment="Center" FontWeight="Bold" Width="184" />
+                <TextBlock Style="{StaticResource BodyText}"   HorizontalAlignment="Left" Width="300" ><Run Text="Explore our vast collection of literary treasures spanning genres from timeless classics to contemporary bestsellers. Immerse yourself in captivating narratives that traverse landscapes both real and imaginary, offering insights into the human experience. Discover new worlds and perspectives with each turn of the page in our carefully curated selection of books."/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+            </WrapPanel>
+
+            <WrapPanel Width="330">
+                <TextBlock  Text="Return Policy" Margin="70,10,0,0" FontSize="24" HorizontalAlignment="Center" FontWeight="Bold"  />
+                <TextBlock Style="{StaticResource BodyText}"  Text="Items borrowed from the library must be returned by the due date specified at checkout. Late returns may incur fines, which vary depending on the type of material and the duration of the delay. Patrons are responsible for any lost or damaged items and will be charged accordingly for their replacement."  />
+            </WrapPanel>
+
+        </WrapPanel>
+
+        <TextBlock  Text="Contact  Us"  FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+
+ 
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Background="SkyBlue">
+        
+        <WrapPanel Orientation="Horizontal"   Margin="360 0 0 0" >
+            <Image Style="{StaticResource Icons}" Source="/Assets/Twitter.png"   />
+            <Image Style="{StaticResource Icons}" Source="/Assets/Youtube.png"  />
+            <Image Style="{StaticResource Icons}" Source="/Assets/Instagram.png"  />
+            <Image Style="{StaticResource Icons}" Source="/Assets/LinkedIn.png"  />
+            <Image Style="{StaticResource Icons}" Source="/Assets/Facebook.png"  />
+       </WrapPanel>
+ 
+        </StackPanel>
+     
+        <Image  Source="/Assets/bookss1.jpg"  Stretch="Fill" Opacity="0.3" />
 
     </Grid>
 </Page>

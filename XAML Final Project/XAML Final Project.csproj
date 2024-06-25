@@ -9,11 +9,60 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Remove="Assets\Add.png" />
+	  <None Remove="Assets\AddBooks.png" />
+	  <None Remove="Assets\AddMembers.png" />
+	  <None Remove="Assets\Availability.png" />
+	  <None Remove="Assets\bluebook.png" />
+	  <None Remove="Assets\bluebook.svg" />
+	  <None Remove="Assets\Books.png" />
+	  <None Remove="Assets\bookss.jpg" />
+	  <None Remove="Assets\bookss1.jpg" />
+	  <None Remove="Assets\bookss2.jpg" />
+	  <None Remove="Assets\bookss3.jpg" />
+	  <None Remove="Assets\book_default.jpg" />
+	  <None Remove="Assets\default_book.png" />
+	  <None Remove="Assets\Facebook.png" />
+	  <None Remove="Assets\Home.png" />
+	  <None Remove="Assets\Instagram.png" />
+	  <None Remove="Assets\LinkedIn.png" />
+	  <None Remove="Assets\Logo.png" />
+	  <None Remove="Assets\ModifyBooks.png" />
+	  <None Remove="Assets\ModifyMembers.png" />
+	  <None Remove="Assets\People.png" />
+	  <None Remove="Assets\Peoples.png" />
+	  <None Remove="Assets\Preorder.png" />
+	  <None Remove="Assets\Twitter.png" />
+	  <None Remove="Assets\Youtube.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="MongoDB.Driver" Version="2.25.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Commands\" />
+	  <Resource Include="Assets\Add.png" />
+	  <Resource Include="Assets\AddBooks.png" />
+	  <Resource Include="Assets\AddMembers.png" />
+	  <Resource Include="Assets\Availability.png" />
+	  <Resource Include="Assets\Books.png" />
+	  <Resource Include="Assets\bookss.jpg" />
+	  <Resource Include="Assets\bookss1.jpg" />
+	  <Resource Include="Assets\bookss2.jpg" />
+	  <Resource Include="Assets\bookss3.jpg" />
+	  <Resource Include="Assets\default_book.png" />
+	  <Resource Include="Assets\Facebook.png" />
+	  <Resource Include="Assets\Home.png" />
+	  <Resource Include="Assets\Instagram.png" />
+	  <Resource Include="Assets\LinkedIn.png" />
+	  <Resource Include="Assets\Logo.png" />
+	  <Resource Include="Assets\ModifyBooks.png" />
+	  <Resource Include="Assets\ModifyMembers.png" />
+	  <Resource Include="Assets\People.png" />
+	  <Resource Include="Assets\Peoples.png" />
+	  <Resource Include="Assets\Preorder.png" />
+	  <Resource Include="Assets\Twitter.png" />
+	  <Resource Include="Assets\Youtube.png" />
 	</ItemGroup>
 
 </Project>
