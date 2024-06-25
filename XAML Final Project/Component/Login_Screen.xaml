@@ -23,16 +23,18 @@
         <TextBlock TextWrapping="Wrap" Text="Sign In to YOOBEE Library" Margin="515,106,0,0" FontSize="36" HorizontalAlignment="Left" TextAlignment="Center" FontFamily="Cambria" VerticalAlignment="Top" Width="267" Height="83"/>
 
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" FontFamily="Cambria" FontSize="22" Margin="372,206,0,0" Width="104" Height="21"/>
-        <TextBox HorizontalAlignment="Left" Height="45" Margin="372,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="566" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
+        <TextBox HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="45" Margin="372,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="566" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
 
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontFamily="Cambria" FontSize="22" Margin="374,304,0,0" Width="104" Height="23"/>
-        <PasswordBox HorizontalAlignment="Left" Height="48" Margin="374,333,0,0" VerticalAlignment="Top" Width="566" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
+        <PasswordBox HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="48" Margin="374,333,0,0" VerticalAlignment="Top" Width="566" FontFamily="Cambria" FontSize="16" BorderBrush="Black"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Forget Password?" VerticalAlignment="Top" FontFamily="Cambria" FontSize="22" Margin="772,405,0,0" Width="168" Height="21"/>
-        <Button Cursor="Hand" Click="OnLogInClicked" Content="Log In" HorizontalAlignment="Left" Height="45" Margin="438,472,0,0" VerticalAlignment="Top" Width="450" Background="SkyBlue" FontSize="20" FontFamily="Cambria"/>
+        <Button Cursor="Hand" Click="OnLogInClicked" Content="Log In" HorizontalAlignment="Left" Height="45" Margin="438,453,0,0" VerticalAlignment="Top" Width="450" Background="SkyBlue" FontSize="20" FontFamily="Cambria"/>
         <CheckBox Content="Remember Me" HorizontalAlignment="Left" Margin="380,408,0,0" VerticalAlignment="Top" BorderThickness="1,1,1,1" FontSize="22" Width="130" />
-        <Button  Content="Admin" BorderBrush="SkyBlue" Background="SkyBlue" Foreground="Black" Width="104" HorizontalAlignment="Left" Margin="511,569,0,2" FontSize="20" FontFamily="Cambria"/>
-        <TextBlock HorizontalAlignment="Left" Margin="326,569,0,0" TextWrapping="Wrap" Text="Are you an Admin?" VerticalAlignment="Top" Width="185" FontSize="22" FontFamily="Cambria" TextAlignment="Center" Height="29"/>
-        <!-- <Expander Header="Show More Information"  >
+
+        <WrapPanel Orientation="Horizontal" Margin="326,512,0,0">
+            <TextBlock HorizontalAlignment="Left" Margin="10 0 10 0" TextWrapping="Wrap" Text="Are you an Admin?" VerticalAlignment="Top"  FontSize="22" FontFamily="Cambria" TextAlignment="Center" />  
+            <Button  Content="Admin" BorderBrush="SkyBlue" Background="SkyBlue" Foreground="Black" Width="104" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" FontFamily="Cambria"/>
+        </WrapPanel><!-- <Expander Header="Show More Information"  >
                 <TextBlock Margin="24 6 0 0">
                 Passwords must meet the following requirements.<LineBreak/>
                 1. Length must be 12 characters or more.<LineBreak/>
