@@ -8,7 +8,6 @@ using System.Windows;
 using System.Windows.Input;
 using XAML_Final_Project.Models;
 using XAML_Final_Project.Pages;
-using XAML_Final_Project.Utilities;
 
 namespace XAML_Final_Project.ViewModels
 {

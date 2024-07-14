@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using XAML_Final_Project.Utilities;
 using XAML_Final_Project.Windows;
 
 namespace XAML_Final_Project

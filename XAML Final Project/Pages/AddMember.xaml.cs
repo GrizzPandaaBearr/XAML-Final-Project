@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace XAML_Final_Project.Pages
 {
-    /// <summary>
-    /// Interaction logic for AddMember.xaml
-    /// </summary>
     public partial class AddMember : Page
     {
         public AddMember()
@@ -25,5 +22,33 @@ namespace XAML_Final_Project.Pages
             InitializeComponent();
         }
 
+        private void AddMemberButton_Click(object sender, RoutedEventArgs e)
+        {
+            var userName = FullNameTextBox.Text;
+            var passWord = CustomerNumberTextBox.Text;
+
+            if (!string.IsNullOrEmpty(userName) && !string.IsNullOrEmpty(passWord))
+            {
+                var newMember = new Member
+                {
+                    Username = userName,
+                    Password = passWord
+                };
+
+                DatabaseConnect.InsertDocument("members", newMember);
+
+                MessageBox.Show("Member added successfully!");
+            }
+            else
+            {
+                MessageBox.Show("Please fill in all fields.");
+            }
+        }
+    }
+
+    public class Member
+    {
+        public string Username { get; set; }
+        public string Password { get; set; }
     }
 }

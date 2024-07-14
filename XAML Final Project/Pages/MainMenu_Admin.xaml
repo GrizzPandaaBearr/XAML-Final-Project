@@ -135,6 +135,7 @@
                 </MenuItem>
 
                 <MenuItem Header="Add Members" 
+						      Click="AddMembersMenuItem_Click"
                               Background="SkyBlue"
                               FontSize="18"
                               FontFamily="Cambria">

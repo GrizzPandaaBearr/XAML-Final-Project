@@ -32,8 +32,11 @@ namespace XAML_Final_Project.Component
         private void View_All_Books(object sender, RoutedEventArgs e)
         {
             GetApplicationMainFrame().NavigationService.Navigate(new Uri("/Pages/Books.xaml", UriKind.Relative));
+
         }
-
-
+        private void AddMembersMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            GetApplicationMainFrame().NavigationService.Navigate(new Uri("/Pages/AddMember.xaml", UriKind.Relative));
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,19 +14,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace XAML_Final_Project.Component
 {
-    /// <summary>
-    /// Interaction logic for LogIn_Screen.xaml
-    /// </summary>
     public partial class LogIn_Screen : UserControl
     {
         public LogIn_Screen()
         {
             InitializeComponent();
         }
-
-
 
         private static Frame GetApplicationLoginFrame()
         {
@@ -34,13 +31,28 @@ namespace XAML_Final_Project.Component
             return f;
         }
 
-
-
         private void OnLogInClicked(object sender, RoutedEventArgs e)
+        {
+            string email = EmailTextBox.Text;
+            string password = PasswordBox.Password;
+
+            DatabaseConnect.ListTheCollections();
+
+            if (DatabaseConnect.AuthenticateUser(email, password))
+            {
+                MessageBox.Show("Login successful!");
+                GetApplicationLoginFrame().Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                MessageBox.Show("Invalid Username or password. Please try again.");
+            }
+
+        }
+
+        private void OnAdminClicked(object sender, RoutedEventArgs e)
         {
             GetApplicationLoginFrame().Visibility = Visibility.Hidden;
         }
-    }
-
-
+     }
 }
